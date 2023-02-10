@@ -5,3 +5,4 @@ Display current directory contents including hidden files
 Lists files of including hidden files
 Script that creates a directory 
 Deleting a file
+Deleting a directory
