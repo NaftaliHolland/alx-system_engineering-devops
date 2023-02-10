@@ -8,3 +8,4 @@ Deleting a file
 Deleting a directory
 Move back to previous directory
 Script that prints the type of file 
+Script that creates a symbolic link
