@@ -6,3 +6,4 @@ Lists files of including hidden files
 Script that creates a directory 
 Deleting a file
 Deleting a directory
+Move back to previous directory
