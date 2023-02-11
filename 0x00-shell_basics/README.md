@@ -12,3 +12,4 @@ Script that creates a symbolic link
 Script that copies all html files
 List files 
 Script that lists files in long format with user and group ids displayed numerically
+Deletes all the files that produced by emacs
