@@ -15,3 +15,4 @@ Script that lists files in long format with user and group ids displayed numeric
 Deletes all the files that produced by emacs
 Ascript that creates a file tree
 List separated with commas
+School magic file that detects whether files are school files
