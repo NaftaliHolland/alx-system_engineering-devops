@@ -9,3 +9,4 @@ Creates afile and writes into it
 Wrie the contents of a command in a file
 Duplicate the lasst line
 script that deletes all .js files
+Display the ten newest files
