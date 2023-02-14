@@ -13,3 +13,4 @@ Display the ten newest files
 Lists only unique files
 Count the number of lines that contain the pattern :bin
 Script that prints lines in the filr /etc/passwd that do not contain the pattern bin
+Display lines that start with letters
