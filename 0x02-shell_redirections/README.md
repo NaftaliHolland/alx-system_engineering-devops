@@ -7,3 +7,4 @@ Display the first ten lines of a file
 Display the third line
 Creates afile and writes into it
 Wrie the contents of a command in a file
+Duplicate the lasst line
