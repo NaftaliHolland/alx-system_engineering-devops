@@ -11,3 +11,4 @@ Duplicate the lasst line
 script that deletes all .js files
 Display the ten newest files
 Lists only unique files
+Count the number of lines that contain the pattern :bin
