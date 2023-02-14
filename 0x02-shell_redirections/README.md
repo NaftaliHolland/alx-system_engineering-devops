@@ -8,3 +8,4 @@ Display the third line
 Creates afile and writes into it
 Wrie the contents of a command in a file
 Duplicate the lasst line
+script that deletes all .js files
