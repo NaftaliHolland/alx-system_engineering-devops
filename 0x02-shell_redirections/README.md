@@ -18,3 +18,4 @@ Change letters
 Script that prints all empty files
 list all files with a .gif extension
 Decodes acrostic
+Parsing web servers
