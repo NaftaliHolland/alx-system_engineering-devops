@@ -17,3 +17,4 @@ Display lines that start with letters
 Change letters
 Script that prints all empty files
 list all files with a .gif extension
+Decodes acrostic
