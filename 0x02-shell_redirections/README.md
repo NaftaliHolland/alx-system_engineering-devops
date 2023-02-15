@@ -16,3 +16,4 @@ Script that prints lines in the filr /etc/passwd that do not contain the pattern
 Display lines that start with letters
 Change letters
 Script that prints all empty files
+list all files with a .gif extension
