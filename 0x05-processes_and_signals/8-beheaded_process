@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Kills the 4-to_infinity_and_beyond process
+
+# get the process id for 4-to_infinity_and_beyond
+id=$(pgrep -f 7-highlander)
+# kill this process
+	kill -9 "$id"
