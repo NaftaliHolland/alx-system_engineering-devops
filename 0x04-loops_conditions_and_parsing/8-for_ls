@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Prints contents of the current directory
+for item in *
+do
+	echo "$item" | awk -F '-' 'NF>1 {print $2}'
+done
