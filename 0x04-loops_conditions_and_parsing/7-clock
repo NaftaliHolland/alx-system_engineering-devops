@@ -2,7 +2,7 @@
 # Prints hours and minutes
 
 hours=0
-minutes=1
+#minutes=1
 
 while [ $hours -le 12 ]
 do
@@ -16,14 +16,14 @@ do
 	((hours++))
 done
 
-while [ $minutes -le 59 ]
-do
-	sec=1
-	echo "Minute: $minutes"
-	while [ $sec -le 59 ]
-	do
-		echo $sec
-		((sec++))
-	done
-	((minutes++))
-done	
+#while [ $minutes -le 59 ]
+#do
+#	sec=1
+#	echo "Minute: $minutes"
+#	while [ $sec -le 59 ]
+#	do
+#		echo $sec
+#		((sec++))
+#	done
+#	((minutes++))
+#done	
