@@ -1,3 +1,5 @@
+# creates a file in /tmp
+
 file { '/tmp/school':
   group   => 'www-data',
   owner   => 'www-data',
