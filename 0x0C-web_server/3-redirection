@@ -16,9 +16,9 @@ sudo ufw allow "Nginx HTTP";
 echo "Hello World!" > /var/www/html/index.html;
 
 # Add redirect after the line with the server_name
-sed -i '/server_name/a\
-	location redirect_me {\
-		return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4\
+sed -i '/server_name/a
+	location redirect_me {
+		return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4
 	}' $config_file
 
 #start nginx service
