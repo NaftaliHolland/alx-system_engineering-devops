@@ -14,4 +14,4 @@ sudo ufw allow "Nginx HTTP";
 echo "Hello World!" > /var/www/html/index.html;
 
 #start nginx service
-sudo service nginx start;
+sudo /etc/init.d/nginx start
