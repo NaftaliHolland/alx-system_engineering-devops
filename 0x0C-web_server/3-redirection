@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Installs and configures a ngix web server
+
+config_file="/etc/nginx/site-available/default"
+
+# update local package index
+sudo apt -y update;
+
+# install nginx
+sudo apt -y install nginx;
+
+# adjust firewall to allow access to nginx
+sudo ufw allow "Nginx HTTP";
+
+# Add index page with
+echo "Hello World!" > /var/www/html/index.html;
+
+# Add redirect after the line with the server_name
+sed -i '/server_name/a\
+	location redirect_me {\
+		return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4\
+	}' $config_file
+
+#start nginx service
+sudo /etc/init.d/nginx start;
