@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Installs and configures a ngix web server
+
+# update local package index
+sudo apt -y update;
+
+# install nginx
+sudo apt -y install nginx;
+
+# adjust firewall to allow access to nginx
+sudo ufw allow "Nginx HTTP";
+
+# Add index page with
+echo "Hello World!" > /var/www/html/index.html;
+
+#start nginx service
+sudo service nginx start;
