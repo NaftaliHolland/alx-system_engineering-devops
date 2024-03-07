@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Install and configures an nginx web server
+
+# Update local package indexes
+sudo apt -y update;
+
+# Install nginx
+sudo apt -y install nginx;
+
+# Adjust firewall to allow access to nginx
+sudo ufw allow "Nginx HTTP";
+
+# Add index page
+echo "Hello World!" > /var/www/html/index.html;
+
+# Add configuration
+config=\
+"server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	root /var/www/html;
+	index index.html index.htm index.nginx-debian.html;
+	server_name _;
+	add_header X-Served-By \$hostname;
+	location / {
+		try_files \$uri \$uri/ =404;
+	}
+	if (\$request_filename ~ redirect_me){
+		rewrite ^ https://youtube.com permanent;
+	}
+	error_page 404 /404.html;
+	location = /404.html {
+		internal;
+	}
+}"
+
+su echo "$config" > /etc/nginx/sites-available/default;
+sudo /etc/init.d/nginx start
