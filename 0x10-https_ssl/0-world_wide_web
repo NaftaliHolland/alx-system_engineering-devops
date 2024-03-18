@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Displays information about subdomains
+
+# Check if inpute is less than 1
+if [ "$#" -lt 1 ]; then
+	echo "Usage: $0 domain [subdomain1 ...]"
+	exit
+fi
+
+get_info() {
+	subs=("www" "lb-01" "web-01" "web-02")
+	
+	if [ "$#" -gt 1 ]; then
+		subs+=("${@:2}")
+	else
+		subs=$2
+	fi
+
+	for sub in "${subs[@]}"; do
+		result=$(dig +short "$sub.$1")
+		echo "The subdomain $sub has IP address $result"
+	done
+
+	return
+}
+
+get_info $#
