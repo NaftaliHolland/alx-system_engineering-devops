@@ -3,8 +3,6 @@
 
 if [ "$#" -gt 0 ]; then
 	sudo useradd "$1";
-	sudo su -c "$1";
-	whoami;
-	exit;
+	sudo su "$1" -c whoami;
 	userdel "$1";
 fi
