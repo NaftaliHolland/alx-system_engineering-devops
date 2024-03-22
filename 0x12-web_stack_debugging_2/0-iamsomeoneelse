@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Runs whoami on the argument passed
+
+if [ "$#" -gt 0 ]; then
+	sudo useradd "$1";
+	sudo su -c "$1";
+	whoami;
+	exit;
+	userdel "$1";
+fi
