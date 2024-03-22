@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # changes nginx owner to nginx
 
-chown -R nginx:nginx /etc/nginx/nginx.conf
+chown -R nginx:nginx /etc/nginx
 
 sed -i 's/80/8080/g' /etc/nginx/sites-available/default
+chmod 777 /etc/nginx/nginx.conf
 sudo service nginx start
